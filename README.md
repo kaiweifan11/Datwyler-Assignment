@@ -18,7 +18,7 @@ Set up
 
 3) Open another terminal and navigate to /Datwyler-Assignment
 4) Install dependecies using 
-   $ npm install --legacy-peer-deps
+   $ npm install --legacy-peer-deps (i.e. resort to using React 16 for compatibility)
 5) run $ npm run-script watch
 
 
