@@ -1,5 +1,10 @@
 # Datwyler-Assignment
 
+Heroku deployment
+You can see the actual application here: 
+https://datwyler-assignment.herokuapp.com/
+
+
 Set up
 1) Open terminal and navigate to /Datwyler-Assignment/assignment
 2) run $ mvn spring-boot:run
