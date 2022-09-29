@@ -5,6 +5,13 @@ You can see the actual application here:
 https://datwyler-assignment.herokuapp.com/
 
 
+Packages in Spring-boot:
+- JPA — Data persistence in SQL
+- thymeleaf — A modern server-side Java template engine
+- WEB — Build web, including RESTful, applications using Spring MVC
+- H2 — Provides a volatile in-memory database
+
+
 Set up
 1) Open terminal and navigate to /Datwyler-Assignment/assignment
 2) run $ mvn spring-boot:run
