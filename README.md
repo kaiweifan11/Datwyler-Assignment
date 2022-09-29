@@ -13,10 +13,10 @@ Packages in Spring-boot:
 
 
 Set up
-1) Open terminal and navigate to /Datwyler-Assignment/assignment
+1) Open terminal and navigate to /Datwyler-Assignment
 2) run $ mvn spring-boot:run
 
-3) Open another terminal and navigate to /Datwyler-Assignment/assignment
+3) Open another terminal and navigate to /Datwyler-Assignment
 4) Install dependecies using 
    $ npm install --legacy-peer-deps
 5) run $ npm run-script watch
