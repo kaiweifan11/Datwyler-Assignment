@@ -1,6 +1,6 @@
 # Datwyler-Assignment
 
-Heroku deployment
+###Heroku deployment###
 You can see the actual application here: 
 https://datwyler-assignment.herokuapp.com/
 
@@ -16,12 +16,12 @@ Packages in Spring-boot:
 
 Set up
 1) Open terminal and navigate to /Datwyler-Assignment
-2) run $ mvn spring-boot:run
+2) run **$ mvn spring-boot:run**
 
 3) Open another terminal and navigate to /Datwyler-Assignment
 4) Install dependecies using 
-   $ npm install --legacy-peer-deps (i.e. resort to using React 16 for compatibility)
-5) run $ npm run-script watch
+   **$ npm install --legacy-peer-deps** (i.e. resort to using React 16 for compatibility)
+5) run **$ npm run-script watch**
 
 Use Case:
 Bank can open new credit facility for any applicant, and under that credit facility, the bank can give
