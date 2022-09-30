@@ -1,6 +1,6 @@
 # Datwyler-Assignment
 
-### Heroku deployment###
+### Heroku deployment
 You can see the actual application here: 
 https://datwyler-assignment.herokuapp.com/
 
