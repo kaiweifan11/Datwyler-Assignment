@@ -1,7 +1,7 @@
 import React from 'react';
 import CreditFacilityInfo from "./CreditFacilityInfo";
 
-const CreditFacilities = ({creditFacilities, allLoans, removeCreditFacility, addLoan, removeLoan, updateLoan}) =>{
+const CreditFacilities = ({creditFacilities, allLoans, removeCreditFacility, addLoan, removeLoan, updateLoan, handleOpenDialog}) =>{
 	return creditFacilities.map((creditFacility) =>(
        <CreditFacilityInfo 
        		creditFacility={creditFacility} 
@@ -11,6 +11,7 @@ const CreditFacilities = ({creditFacilities, allLoans, removeCreditFacility, add
        		addLoan={addLoan}
        		removeLoan={removeLoan}
        		updateLoan={updateLoan}
+       		handleOpenDialog={handleOpenDialog}
    		/>
     ));
 }
