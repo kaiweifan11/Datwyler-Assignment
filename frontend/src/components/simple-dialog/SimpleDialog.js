@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogContentText, DialogActions, Typography, Button } from '@material-ui/core';
+import React from 'react';
+import { Dialog, DialogContent, DialogActions, Typography, Button } from '@material-ui/core';
 
 const SimpleDialog = ({isOpen, handleClose, msg}) =>{
 	return (
@@ -14,7 +14,6 @@ const SimpleDialog = ({isOpen, handleClose, msg}) =>{
 	          		Ok
 	          </Button>
 	        </DialogActions>
-    		
     	</Dialog>
 	)
 }

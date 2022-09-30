@@ -34,7 +34,7 @@ const RegisterCreditFacility = ({addCreditFacility}) =>{
         <form onSubmit={onSubmit}>
         	<div style={wrapperStyle}>
 	        	<Typography variant="h6" color="text.secondary" gutterBottom>
-		          	Open a new credit facility
+		          	Open a new credit facility (Step1 Add applicant name)
 		        </Typography>
 	            <div style={{display:'flex', paddingLeft: 20}}>
 	                <TextField

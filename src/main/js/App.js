@@ -9,7 +9,7 @@ import SimpleDialog from '../../../frontend/src/components/simple-dialog/SimpleD
 import axios from "axios";
 
 const container = {
-    background: '#c0c0c0',
+    background: 'black',
     paddingBottom: 10,
 }
 
@@ -107,8 +107,13 @@ const App = () =>{
 			});
 	}
 	
-	const handleCloseLoanDialog = () =>{
+	const handleCloseDialog = () =>{
 		setIsDialogOpen(false);
+	}
+	
+	const handleOpenDialog = (msg) =>{
+		setDialogMessage(msg)
+        setIsDialogOpen(true);
 	}
     
     return (
@@ -125,10 +130,11 @@ const App = () =>{
 		            	addLoan={addLoan}
 		            	removeLoan={removeLoan}
 		            	updateLoan={updateLoan}
+		            	handleOpenDialog={handleOpenDialog}
 		        	/>
 	        	</CreditFacilitiesWrapper>
         	}
-        	<SimpleDialog isOpen={isDialogOpen} handleClose={handleCloseLoanDialog} msg={dialogMessage}/>
+        	<SimpleDialog isOpen={isDialogOpen} handleClose={handleCloseDialog} msg={dialogMessage}/>
         </div>
     );
 }

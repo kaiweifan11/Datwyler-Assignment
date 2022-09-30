@@ -5,7 +5,7 @@ import { Button, Typography, IconButton } from '@material-ui/core';
 
 import Loans from '../loans/Loans';
 
-const CreditFacilityInfo = ({creditFacility, allLoans, removeCreditFacility, addLoan, removeLoan, updateLoan}) =>{
+const CreditFacilityInfo = ({creditFacility, allLoans, removeCreditFacility, addLoan, removeLoan, updateLoan, handleOpenDialog}) =>{
 	const [loans, setLoans] = useState([]);
 	
 	useEffect(() => {
@@ -13,15 +13,12 @@ const CreditFacilityInfo = ({creditFacility, allLoans, removeCreditFacility, add
 		setLoans(newLoans);
 	}, [allLoans]);
 	
-	const infoStyle = () =>{
-        return {
-            backgroundColor: (creditFacility.id %2) == 0? '#c8d4f7cc' :'',
-            padding:'10px',
-            display:'flex',
-            alignItems:'center',
-            justifyContent:'space-between',
-            justifyItems: 'flex-start',
-        }
+	const infoStyle = {
+        padding:'10px',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between',
+        justifyItems: 'flex-start',
     }
     
     const iconUsername = {
@@ -34,7 +31,12 @@ const CreditFacilityInfo = ({creditFacility, allLoans, removeCreditFacility, add
 	}
 	
 	const addNewLoan =() =>{
-		const newLoan = {type: '', amount: 0, creditFacilityId: creditFacility.id, isNew: true};
+		const exisitngNewLoans = loans.filter((loan) => loan.id === undefined);
+		if(exisitngNewLoans.length>0){
+			handleOpenDialog('Please register the new loan application before adding');
+			return;
+		} 
+		const newLoan = {type: '', amount: 0, creditFacilityId: creditFacility.id};
 		const newLoans = [...loans];
 		newLoans.push(newLoan);
 		setLoans(newLoans);
@@ -46,14 +48,15 @@ const CreditFacilityInfo = ({creditFacility, allLoans, removeCreditFacility, add
 			removeLoan(id);
 		}else{
 			// if id does not exist
-			const newLoans = allLoans.splice(index, 1);
+			const newLoans = [...loans]
+			newLoans.splice(index, 1);
 			setLoans(newLoans);
 		}
 	}
     
     return(
 		<div>
-		    <div style={infoStyle()}>
+		    <div style={infoStyle}>
 		        <div style={iconUsername}>
 		            <AccountCircleIcon style={{color:"#138a04", margin:"0px 10px 0px 0px"}}/>
 	            	<Typography variant="body1" color="text.secondary" gutterBottom>

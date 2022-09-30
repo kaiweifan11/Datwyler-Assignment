@@ -8,27 +8,11 @@ const LoanInfo = ({loan, checkAndRemove, addLoan, creditFacilityId, index, updat
 	const [loanDetails, setLoanDetails] = useState(loan);
 	const [isDisabled, setIsDisabled] = useState(!!loanDetails.id);
 	const [isAmountError, setIsAmountError] = useState(false);
-	
-	const infoStyle = () =>{
-        return {
-            backgroundColor: (loan.id %2) == 0? '#c8d4f7cc' :'',
-            padding:'10px',
-            borderBottom: '1px #ccc dotted',
-            display:'flex',
-            alignItems:'center',
-            justifyContent:'space-between',
-            justifyItems: 'flex-start',
-        }
-    }
     
 	const inputs = {
 		display: 'inline-block',
 	    textAlign: 'center', 
 	    margin: '10px 20px 0px'
-	}
-	
-	const addNewLoan = () =>{
-		addLoan({type: 'home', amount: 10000, creditFacilityId: creditFacilityId});
 	}
 	
 	const onChangeType = (e) =>{
@@ -43,7 +27,7 @@ const LoanInfo = ({loan, checkAndRemove, addLoan, creditFacilityId, index, updat
 		setLoanDetails(newLoanDetails);
 	}
 	
-	const onRemoveLoan = (id, index) =>{
+	const onRemoveLoan = (id) =>{
 		checkAndRemove(id, index);
 	}
 	
@@ -67,10 +51,9 @@ const LoanInfo = ({loan, checkAndRemove, addLoan, creditFacilityId, index, updat
 		setIsDisabled(false);
 	}
 	
-    
     return(
         <div style={{maxWidth: '90%', margin: 'auto', paddingTop: 10}}>
-        	<Card sx={{ padding: 20 }}>
+        	<Card sx={{ padding: 20 }} style={{backgroundColor: "#ffebcd"}}>
         		<CardContent>
         			<div>
 	        			<Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
