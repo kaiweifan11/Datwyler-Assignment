@@ -1,12 +1,9 @@
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\models\User2.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\models\Loan.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\repositories\UserRepository.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\repositories\LoanRepository.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\WebMainController.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\exceptions\ResourceNotFoundException.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\CreditFacilityController.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\models\CreditFacility.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\LoanController.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\AssignmentApplication.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\UserController.java
-C:\Users\kafan\Desktop\Personal and Admin\Datwyler\assignment\src\main\java\com\Datwyler\CreditFacility\assignment\repositories\CreditFacilityRepository.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\models\CreditFacility.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\repositories\CreditFacilityRepository.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\models\Loan.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\CreditFacilityController.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\exceptions\ResourceNotFoundException.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\WebMainController.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\repositories\LoanRepository.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\controllers\LoanController.java
+C:\Users\kafan\Documents\GitHub\Datwyler-Assignment\src\main\java\com\Datwyler\CreditFacility\assignment\AssignmentApplication.java
